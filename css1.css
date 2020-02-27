@@ -6,8 +6,67 @@ color:maroon;
 margin-left:40px;
 }
 
-p
+p.normal
 {
-color:blue;
+color:green;
+font-style:italic;
+font-family:monospace;
+font-size:30px;
+text-align:right;
+text-decoration:line-through;
+text-transform:capitalize;
+text-shadow:1px 6px 3px red;
+}
+p.special
+
+{
+font-weight:bold;
+color:red;
+font-size:20px;
+text-align:center;
+text-decoration:underline;
+word-spacing:5px;
+letter-spacing:8px;
+text-transform:lowercase;
+
 }
 
+img
+{
+
+border:5px solid red;opacity:0.3;
+}
+
+#id1{text-decoration:underline;}
+.mycolor{color: blue;}
+
+p.one{
+border-style:solid;
+border-width:6px;
+border-color:red;
+border-top-style:dashed;
+border-right-style:solid;
+border-bottom-style:dashed;
+border-left-style:solid;
+}
+
+p.two{
+border-style:solid;
+border-width:medium;
+border:color:green;
+border-left:6px solid red;
+background-color:green;
+border-top-style:dotted;
+border-right-style:solid;
+border-bottom-style:dotted;
+border-left-style:solid;
+
+}
+
+p.three{
+margin: 25px 50px 75px 100px;
+border-style:solid;
+border-width:2px 10px 4px 20px;
+border-color:blue red green yellow;
+margin: auto;
+}
