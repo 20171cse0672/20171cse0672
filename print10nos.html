@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>samplejs</title>
+<script type="text/JavaScript">
+var i=0;
+var a=[];
+var e="";
+function read()
+{ while(i<10)
+{
+var input=prompt("enter array elements:"+a);
+a[i++]=input;
+}
+document.getElementById("pr").innerHTML ="entered array:"+a;
+}
+
+
+
+</script>
+</head>
+<body>
+<input type="button" onclick="read();" name="getname" value="input ">
+<p id="pr">array elements:</p>
+
+</body>
+</html>
