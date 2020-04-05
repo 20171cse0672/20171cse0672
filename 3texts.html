@@ -1,0 +1,71 @@
+<html>
+ <head>
+  <title>IT Assignment Stack</title>
+  
+
+  <style type="text/css">
+  	body {
+	font-family: algerian;
+                 font-style:italic;
+	font-size: 30pt;
+}
+
+#one {
+	position: fixed;
+	top: 220px;
+	left: 320px;
+
+	background-color: yellow;
+	color: orange;
+}
+
+#two {
+	position: fixed;
+	top: 240px;
+	left: 340px;
+
+	background-color: aqua;
+	color: black;
+}
+
+#three {
+	position: fixed;
+	top: 260px;
+	left: 360px;
+
+	background-color: green;
+	color: red;
+}
+  </style>
+  <script type="text/javascript">
+  	  var topLayer = "three";
+
+function moveIt(toTop) {
+
+    var oldTop   =   document.getElementById(topLayer).style;
+    var newTop =   document.getElementById(toTop).style;
+
+    oldTop.zIndex   = "0";
+    newTop.zIndex = "10";
+
+    topLayer = document.getElementById(toTop).id;
+
+}
+  </script>
+ </head>
+ <body>
+
+	<div id="one" onmouseover="moveIt('one')">
+		Bring the mouse on to one you can see this paragraph but others will be on stack, hence it will be backside.
+	</div>
+
+	<div id="two" onmouseover="moveIt('two')">
+		I have learned javascript by seeing the videos in google classroom, which had been uploaded by our lecturers.
+	</div>
+
+	<div id="three" onmouseover="moveIt('three')">
+		I tried and successfully completed attempting correctly all the questions asked by our professors in google classroom.
+	</div>
+
+ </body>
+</html>
