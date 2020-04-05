@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>samplejs</title>
+<script type="text/JavaScript">
+function calc(){
+var s=parseInt(document.getElementById("a").value)+parseInt(document.getElementById("b").value);
+alert("sum="+s);
+}
+function cal(){
+var s=parseInt(document.getElementById("a").value)+parseInt(document.getElementById("b").value);
+document.write("sum="+s);
+}
+
+
+</script>
+</head>
+<body> <form>
+no1:<input type="number" id="a" >
+no2:<input type="number" id="b" >
+</br>
+<input type="button" value="writesum" onclick="cal();"/>
+<input type="button" value="alertsum" onclick="calc();" />
+</form>
+</body>
+</html>
